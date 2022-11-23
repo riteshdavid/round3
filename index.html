@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- <script src="https://kit.fontawesome.com/a0096fb859.js" crossorigin="anonymous"></script>    -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+
+    <title>Round 3!</title>
+    <style>
+        input[type=radio] {
+            width: 25px;
+            height: 25px;
+        }
+
+        #White {
+            accent-color: white;
+        }
+
+        #Black {
+            accent-color: black;
+        }
+
+        #Green {
+            accent-color: green;
+        }
+        
+        .table>:not(caption)>*>*{
+            padding:0.7rem 1.5rem;
+        }
+
+        .rounded2point3{
+            border-radius: 2.3rem !important;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid" id="menu">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-white mx-auto" style="width:80%;">
+            <div class="container-fluid ">
+                <a class="navbar-brand fw-bold fs-3" href="#">ARACHNOMESH<i class="bi bi-search ms-2 fs-4"></i></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-4">
+                        <li class="nav-item me-2">
+                            <a class="nav-link active" aria-current="page" href="#">Products</a>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="nav-link active" href="#">Technology</a>
+                        </li>
+
+                        <li class="nav-item me-2">
+                            <a class="nav-link" href="#"><i class="bi bi-person fs-4" width="20px" height="20px"></i></a>
+                            <!-- <i class="fa-thin fa-user"></i> -->
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="nav-link" href="#"><i class="bi bi-heart fs-5"></i></a>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="nav-link" href="#"><i class="bi bi-cart fs-5"></i></a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <hr style="border: 0; box-shadow: 0 5px 5px #8c8c8c;">
+
+        <div class="container my-4" id="product-detail">
+            <h2 class="fs-1">Bottle Filtered</h2>
+            <div class="row gx-5 my-3">
+                <div class="col-lg-10">
+                    <button type="button" class="btn btn-outline-secondary col-lg-2 rounded-0">General info</button>
+                    <button type="button" class="btn col-lg-2 rounded-0">Product details</button>
+                    <button type="button" class="btn col-lg-2 rounded-0">Reviews</button>
+                </div>
+                <div class="col-lg-2">
+                    <div class="d-flex flex-column">
+                        <div class="col-lg-2 d-flex"><i class="bi bi-star-fill" style="color:#ffc107"></i>
+                            <i class="bi bi-star-fill" style="color:#ffc107"></i>
+                            <i class="bi bi-star-fill" style="color:#ffc107"></i>
+                            <i class="bi bi-star-fill" style="color:#ffc107"></i>
+                            <i class="bi bi-star"></i></div>
+                        <p class="p-0 m-0">23 reviews</p>
+                    </div>
+
+                </div>
+
+
+
+
+
+            </div>
+
+            <hr style="  border: 0;border-top: 1px solid #8c8c8c;border-bottom: 1px solid #fff;">
+
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active ">
+                                <img src="/pics/pic-1.jpg" class="d-block w-100 rounded-3" alt="...">
+                            </div>
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"
+                                style="background-color: azure;border-radius: 50%;height: 50px;width: 50px;"><i
+                                    class='fas fa-arrow-right'></i></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"
+                                style="background-color: azure;border-radius: 50%;height: 50px;width: 50px;"><i
+                                    class="fa-solid fa-arrow-right"></i></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <div class="d-flex justify-content-evenly my-3">
+                        <img src="pics/pic-1.jpg" alt="" class="img-fluid rounded-3" width="100px">
+                        <img src="pics/pic-1.jpg" alt="" class="img-fluid rounded-3" width="100px">
+                        <img src="pics/pic-1.jpg" alt="" class="img-fluid rounded-3" width="100px">
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <p class="mx-2 fw-bold">Share:</p>
+                        <p class="mx-1"><i class="bi bi-facebook"></i></p>
+                        <p class="mx-1"><i class="bi bi-twitter"></i></p>
+                        <p class="mx-1"><i class="bi bi-pinterest"></i></p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 px-5">
+                    <div class="d-flex p-3">
+                        <p class="fs-1" style="font-weight: 500;">$150.00</p>
+                        <p class="mx-2 text-decoration-line-through fs-4 text-secondary" style="padding-top:11px ;">$300
+                        </p>
+                        <span class="bg-danger"
+                            style="width: 38px;height: 28px;border-radius: 4px;color: white;font-weight: 500;margin: 13px 3px;">-50%</span>
+                    </div>
+                    <p class="px-3">Color</p>
+                    <div class="row">
+                        <div class="col-lg-3 ms-3">
+                            <input type="radio" style="" id="Black" value="Black">
+                            <input type="radio" style="" id="White" value="White">
+                            <input type="radio" style="" id="Green" value="Green">
+
+                        </div>
+                        <p class="text-secondary col-lg-2" style="margin:2px 3px ;">Black</p>
+
+
+
+
+
+                        <div class="col-lg-6 ms-3">
+                            <button class="btn btn-outline-success p-2 me-2">Insulated</button>
+                            <button class="btn btn-outline-secondary p-2">Non-Insulated</button>
+                        </div>
+                    </div>
+                    <p class="px-3 my-3">Size</p>
+                    <div class="row">
+                        <div class="col-lg-12 ms-3">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>17 oz</option>
+                                <option value="1">16 oz</option>
+                                <option value="2">17 oz</option>
+                                <option value="3">18 oz</option>
+                              </select>
+                        </div>
+                    </div>
+                    <div class="row my-4">
+                        <div class="col-lg-2 ms-3">
+                            <select class="form-select py-2" aria-label="Default select example">
+                                <option selected>17</option>
+                                <option value="1">16</option>
+                                <option value="2">17</option>
+                                <option value="3">18</option>
+                              </select>
+                        </div>
+                        <div class="col-lg-5 px-0 ">
+                            <button style="background-color:rgb(47, 47, 80);color:#fff; border-radius: 5px;" class="py-2 px-5 fw-bold">Add to cart <i class="bi bi-cart ms-1"></i></button>
+                            
+                        </div>
+                        <div class="col-lg-4 px-0">
+                            <button class="px-5 py-2" style="color: rgb(47, 47, 80);border:1px solid rgb(47,47,80); border-radius: 5px; background-color: #fdf6f6;"><i class="bi bi-heart me-2" style="color:rgb(47, 47, 80)"></i>Favourite</button>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <p class="ms-5" style="font-weight:500;"> Delivery</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 d-flex text-nowrap">
+                            <p class="ms-3">Free standard shipping on order <strong>&nbsp;over $35&nbsp;</strong>before tax,plus free return.</p>
+                        </div>
+                    </div>
+                    <table class="col-md-12 col-xs-12 table ms-3 fw-lighter">
+                        <thead>
+                          <tr>
+                            <th scope="col" class="text-secondary fw-lighter">TYPE</th>
+                            <th scope="col" class="text-secondary fw-lighter">HOW LONG</th>
+                            <th scope="col" class="text-secondary fw-lighter">HOW MUCH</th>
+                            
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row" class="text-secondary fw-lighter">Standard delivery</th>
+                            <td>1-4 business days</td>
+                            <td>$4.50</td>
+                            
+                          </tr>
+                          <tr>
+                            <th scope="row" class="text-secondary fw-lighter">Express delivery</th>
+                            <td>1 business day</td>
+                            <td>$10.00</td>
+                            
+                          </tr>
+                          <tr>
+                            <th scope="row" class="text-secondary fw-lighter pb-5">Pick up in store </th>
+                            <td>1-3 business days</td>
+                            <td>Free</td>
+  
+                          </tr>
+                          
+                        </tbody>
+                    </table>
+                    <div class="row">
+                        <p class="ms-5" style="font-weight:500;">Return</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 d-flex">
+                            <p class="ms-3 text-nowrap text-secondary">You have&nbsp;<strong>15 days</strong>&nbsp;to return the item(s) using any of the following methods:</p><br>
+                        </div>
+                        <div class="col-lg-12 d-flex ms-3">
+                            <li class="text-secondary mb-2">Free store return</li>
+                        </div>
+                        <div class="col-lg-12 d-flex ms-3">
+                            <li class="text-secondary mb-2">Free return vi USPS Dropoff Service</li>
+                        </div>
+                    </div>
+                    <hr class="bg-secondary">
+                    <div class="row my-5 gx-1 d-flex gx-5">
+                        <div class="col-lg-4">
+                            <img src="/pics/pic-1.jpg" alt="" class="rounded-3" style="width: 150px;height:85px ;">
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="/pics/pic-1.jpg" alt="" class="rounded-3" style="width: 150px;height:85px ;">
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="/pics/pic-1.jpg" alt="" class="rounded-3" style="width: 150px;height:85px ;">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="row mt-5 ">
+                <h3 class="fw-bold fs-1 my-3">Recommendations</h3>
+                <div class="row">
+                    <div class="col-lg-4  col-md-12 col-sm-12 col-xs-12">
+                        <img src="/pics/pic-1.jpg" alt="" class="rounded2point3" style="width:350px;">
+                        <h5 class="fw-bold text-center mt-3 fs-4">Monaco Green</h5>
+                        <p class="text-center">PureV</p>
+                    </div>
+                    <div class="col-lg-4  col-md-12 col-sm-12 col-xs-12">
+                        <img src="/pics/pic-1.jpg" alt="" class="rounded2point3" style="width:350px;">
+                        <h5 class="fw-bold text-center mt-3 fs-4">Obsidian Perl</h5>
+                        <p class="text-center">FutureV</p>
+                    </div>
+                    <div class="col-lg-4  col-md-12 col-sm-12 col-xs-12">
+                        <img src="/pics/pic-1.jpg" alt="" class="rounded2point3" style="width:350px;">
+                        <h5 class="fw-bold text-center mt-3 fs-4">Pure Snow</h5>
+                        <p class="text-center">JugV</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-5">
+            <div class="row mt-5 col-md-12">
+                <div class="col-lg-6 d-flex">
+                    <div class="col-lg-4">
+                        <h4 class="fw-bold">Help</h4>
+                        <p>FAQ</p>
+                        <p>Review</p>
+                        <p>My Account</p>
+                        <p>Corporate</p>
+                        <p>Contact Us</p>
+
+                    </div>
+                    <div class="col-lg-4">
+                        <h4 class="fw-bold">Shop</h4>
+                        <p>PureV</p>
+                        <p>Gifts</p>
+                        <p>Travel set</p>
+                        <p>Accesories</p>
+
+                    </div>
+                    <div class="col-lg-4">
+                        <h4 class="fw-bold">About</h4>
+                        <p>Magazine</p>
+                        <p>Press</p>
+                        <p>Our Story</p>
+                        <p>Tech</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3>Sign up for the newsletter</h3>
+                    <form class="d-flex">
+                        <input class="form-control" type="search" placeholder="Enter your Email" aria-label="Search" style="border-radius:33px;padding-left:33px;">
+                        <button class="btn btn-success text-nowrap" type="submit" style="border-radius:18px;margin-left:-86px ;">SIGN UP</button>
+                </form>
+                </div>
+            </div>
+
+            <div class="row mt-3 col-sm-12">
+                <div class="col-lg-4">
+                    <p class="fs-5">Copywrite Something 2022</p>
+                </div>
+                <div class="col-lg-4 gx-2 my-3">
+                    <i class="bi bi-linkedin mx-2 fs-5"></i>
+                    <i class="bi bi-facebook mx-2 fs-5"></i>
+                    <i class="bi bi-twitter mx-2 fs-5"></i>
+                    <i class="bi bi-whatsapp mx-2 fs-5"></i>
+                </div>
+                <div class="col-lg-4 gx-3 d-flex">
+                    <p class="col-lg-6">T&C</p>
+                    <p class="col-lg-6">Privacy Policy</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
